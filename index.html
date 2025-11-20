@@ -10,7 +10,7 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <h2 class="logo">John<span>Anthony<span>Butihen</span></h2>
+        <h2 class="logo">John Anthony <span>Butihen</span></h2>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -21,27 +21,28 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
-        <h1>Hello! I'm <span>John Anthony Butihen</span></h1>
-        <p>Web Developer • BSCS Student • Systems Builder</p>
-        <a href="#projects" class="btn">View My Work</a>
+        <div class="hero-content">
+            <h1>Hello! I'm <span>John Anthony Butihen</span></h1>
+            <p>Web Developer • BSCS Student • Systems Builder</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>
+        <p class="about-text">
             I am a 3rd Year Computer Science student at Colegio De San Pascual Baylon (CSPB) 
-            with experience in web development, system design, and database management.  
-            I specialize in building functional, user-friendly systems and enjoy creating 
+            with experience in web development, system design, and database management.
+            I specialize in building functional, user-friendly systems, and I enjoy creating 
             applications that solve real-world problems, particularly in healthcare and 
             disaster management.
         </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h2>Skills</h2>
-
         <div class="skills-container">
             <div class="skill-box">
                 <h3>Programming Languages</h3>
@@ -55,7 +56,7 @@
 
             <div class="skill-box">
                 <h3>Tools & Technologies</h3>
-                <p>Git & GitHub, VS Code, IntelliJ, Sublime, MySQL, Postman</p>
+                <p>Git & GitHub, VS Code, IntelliJ, MySQL, Postman</p>
             </div>
 
             <div class="skill-box">
@@ -66,16 +67,17 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Featured Projects</h2>
 
-        <div class="project">
+        <div class="project-card">
             <h3>Smart Health Management System (SHMS)</h3>
             <p>
                 A web system for municipal clinics featuring appointment scheduling, 
                 patient records, doctor availability tracking, and medicine inventory management.
             </p>
             <p><strong>Tech Stack:</strong> Python, JavaScript, SQL, HTML, CSS</p>
+
             <div class="gallery">
                 <img src="Admin-Side/AdminDashboard.png" alt="Admin Dashboard">
                 <img src="Admin-Side/AppointmentsTabUpcoming.png" alt="Upcoming Appointments">
@@ -85,7 +87,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div class="project-card">
             <h3>Disaster Preparedness Simulator</h3>
             <p>
                 A simulation-based training program that helps users practice decision-making 
@@ -94,7 +96,7 @@
             <p><strong>Tech Stack:</strong> JavaScript, Simulation Logic, UI Design</p>
         </div>
 
-        <div class="project">
+        <div class="project-card">
             <h3>ClinicQ Appointment App</h3>
             <p>
                 A mobile-focused appointment system for clinic queueing, 
@@ -102,23 +104,14 @@
             </p>
             <p><strong>Tech Stack:</strong> Python, JavaScript</p>
         </div>
-
-        <div class="project">
-            <h3>Additional Mini Projects</h3>
-            <ul>
-                <li>Inventory Management CRUD System</li>
-                <li>Java Calculator App</li>
-                <li>Responsive Personal Website (HTML/CSS)</li>
-            </ul>
-        </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>Email: <strong>johnanthonybutihen1111@gmail.com</strong></p>
-        <p>GitHub: <strong>github.com/Dev-Tr4ffy</strong></p>
-        <p>LinkedIn (optional)</p>
+        <p>Email: <a href="mailto:johnanthonybutihen1111@gmail.com">johnanthonybutihen1111@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Dev-Tr4ffy" target="_blank">github.com/Dev-Tr4ffy</a></p>
+        <p>LinkedIn: <em>(optional)</em></p>
     </section>
 
     <footer>
@@ -127,7 +120,3 @@
 
 </body>
 </html>
-
-
-
-
