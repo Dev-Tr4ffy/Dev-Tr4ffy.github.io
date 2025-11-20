@@ -11,6 +11,7 @@
     <!-- NAVIGATION -->
     <nav>
         <h2 class="logo">John Anthony <span>Butihen</span></h2>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -113,6 +114,25 @@
         <img class="modal-content" id="modalImage">
     </div>
     <script>
+        // Responsive nav toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+
+            // Close menu when a link is clicked
+            document.querySelectorAll('nav ul li a').forEach(a => {
+                a.addEventListener('click', () => navLinks.classList.remove('open'));
+            });
+
+            // Remove mobile open state when resizing to large screens
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) navLinks.classList.remove('open');
+            });
+        }
+
         const modal = document.getElementById("imgModal");
         const modalImg = document.getElementById("modalImage");
         const closeBtn = document.querySelector(".close");
@@ -137,7 +157,6 @@
 
 </body>
 </html>
-
 
 
 
